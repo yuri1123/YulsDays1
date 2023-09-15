@@ -86,7 +86,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
-                        <a href="index.html" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
+                        <a th:href="@{/}" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -119,13 +119,13 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a th:href="@{/}">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="aboutme.html">About Us</a></li>
+                                            <li><a th:href="@{/}">Home</a></li>
+                                            <li><a th:href="@{/aboutme}">About Us</a></li>
                                             <li><a href="single-post.html">Single Post</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a th:href="@{/contact}">Contact</a></li>
                                             <li><a href="coming-soon.html">Coming Soon</a></li>
                                         </ul>
                                     </li>
@@ -154,7 +154,7 @@
                                             <li><a href="#">Catagory 1</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="aboutme.html">About Us</a></li>
+                                    <li><a th:href="@{/aboutme}">About Us</a></li>
                                     <li><a href="#">Megamenu</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
@@ -191,7 +191,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a th:href="@{/contact}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Form  -->

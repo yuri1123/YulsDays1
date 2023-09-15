@@ -150,7 +150,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
-                    <a href="index.html" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
+                    <a th:href="@{/}" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
 
                     <!-- Subscribe btn -->
                     <div class="subscribe-btn">
-                        <a href="contact.html" class="btn subscribe-btn">Contact
+                        <a th:href="@{/contact}" class="btn subscribe-btn">Contact
                             me</a>
                     </div>
 
@@ -207,16 +207,17 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a th:href="@{/}">Home</a></li>
                                 <li><a th:href="@{aboutme}">About ME</a>
                                 </li>
-                                <li><a href="skills.html">Skills</a></li>
-                                <li><a href="works.html">Works</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a th:href="@{skills}">Skills</a></li>
+                                <li><a th:href="@{works}">Works</a></li>
+                                <li><a th:href="@{contact}">Contact</a></li>
 
                                 </li>
                                 </li>
                             </ul>
+
 
                             <!--              &lt;!&ndash; Search Form  &ndash;&gt;-->
                             <!--              <div id="search-wrapper">-->
@@ -276,7 +277,7 @@
                             <div class="row row-cols-1 row-cols-md-2 g-4 mb-2">
                                 <div class="col">
                                     <div class="card h-80">
-                                        <a href="yulshop.html">
+                                        <a th:href="@{/yulshop}">
                                             <div class="image-container">
                                                 <img class="card-img-top" src="/img/yulsimg/wh1_hero.jpg" alt="people"/>
                                             </div>
@@ -295,7 +296,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="card h-100">
-                                        <a href="kcsa.html">
+                                        <a th:href="@{/kcsa}">
                                             <div class="image-container">
                                                 <img src="/img/yulsimg/wbanner2.png"
                                                      class="card-img-top" alt="Palm Springs Road"/>
@@ -622,7 +623,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a th:href="@{/}">Home</a></li>
                                     <li><a href="#">MUSIC</a></li>
                                     <li><a href="#">TRAVEL</a></li>
                                     <li><a href="#">DEVELOPMENT</a></li>

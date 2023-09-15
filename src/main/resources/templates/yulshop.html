@@ -113,7 +113,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
-                    <a href="index.html" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
+                    <a th:href="@{/}" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
 
                     <!-- Subscribe btn -->
                     <div class="subscribe-btn">
-                        <a href="contact.html" class="btn subscribe-btn">Contact
+                        <a th:href="@{/contact}" class="btn subscribe-btn">Contact
                             me</a>
                     </div>
 
@@ -170,16 +170,17 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a th:href="@{/}">Home</a></li>
                                 <li><a th:href="@{aboutme}">About ME</a>
                                 </li>
-                                <li><a href="skills.html">Skills</a></li>
-                                <li><a href="works.html">Works</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a th:href="@{skills}">Skills</a></li>
+                                <li><a th:href="@{works}">Works</a></li>
+                                <li><a th:href="@{contact}">Contact</a></li>
 
                                 </li>
                                 </li>
                             </ul>
+
 
                             <!--              &lt;!&ndash; Search Form  &ndash;&gt;-->
                             <!--              <div id="search-wrapper">-->
@@ -228,7 +229,7 @@
                     <div class="single-blog-content">
                         <div class="line"></div>
                         <a href="#" class="post-tag">my works 1</a>
-                        <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500;" href="yulshop.html" class="post-headline">문구쇼핑몰, 율스샵(YULSHOP)</a></h4>
+                        <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500;" th:href="@{/yulshop}" class="post-headline">문구쇼핑몰, 율스샵(YULSHOP)</a></h4>
                         <div class="post-meta mb-50">
                             <p>Created By  <a href="#">Choi Yuri</a></p>
                         </div>
@@ -592,7 +593,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a th:href="@{/}">Home</a></li>
                                     <li><a href="#">MUSIC</a></li>
                                     <li><a href="#">TRAVEL</a></li>
                                     <li><a href="#">DEVELOPMENT</a></li>

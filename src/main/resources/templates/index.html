@@ -88,7 +88,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
-                        <a href="index.html" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
+                        <a th:href="@{/}" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
 
                         <!-- Subscribe btn -->
                         <div class="subscribe-btn">
-                            <a href="contact.html" class="btn subscribe-btn">Contact
+                            <a th:href="@{/contact}" class="btn subscribe-btn">Contact
                                 me</a>
                         </div>
 
@@ -254,7 +254,7 @@
                             <p style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:300">개발을 시작하게 된 것은 아이가 생기면서 아이에게 개발로 더 좋은 세상을 선물해주고 싶었습니다.
                             처음에 자바로 공부를 시작하며 처음 웹으로 무엇인가를 표현했던 생각이 납니다. 좀 더 편하고 재미있는
                             세상에 없던 무엇인가를 개발할 수 있기까지도 계속해서 공부하며, 서비스 향상에 앞장서겠습니다.</p>
-                            <a href="works.html" class="btn original-btn">Read More</a>
+                            <a th:href="@{/works}" class="btn original-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                         <img src="img/yulsimg/ggweb.jpg" alt="">
                         <!-- Catagory Title -->
                         <div class="catagory-title">
-                            <a href="works.html">PORTFOLIO WORKS</a>
+                            <a th:href="@{/works}">PORTFOLIO WORKS</a>
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
                                     <div class="line"></div>
                                     <a  class="post-tag">Cover Letter 1</a>
                                     <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500; font-size: 23px;"
-                                           href="coverletter1.html" class="post-headline">천사가 가져다 준 선물</a></h4>
+                                           th:href="@{/coverletter1}" class="post-headline">천사가 가져다 준 선물</a></h4>
                                     <p style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:300">
                                         이 세상에 없던 것들을 만들어내고, 많은 이들에게 도움을 줄 수 있다는 생각이 들어 관심을 갖게 되었습니다.
                                         저의 손으로 만든 새로운 세상에서 많은 사람들이 내가 만든 세상에서 행복을 누릴 수 있으면 좋겠다는 생각이 들었습니다.</p>
@@ -331,7 +331,7 @@
                                 <div class="single-blog-content">
                                     <div class="line"></div>
                                     <a href="#" class="post-tag">Cover Letter 2</a>
-                                    <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500; font-size: 23px;" href="coverletter2.html" class="post-headline">백엔드와 플러터의 융합</a></h4>
+                                    <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500; font-size: 23px;" th:href="@{/coverletter2}" class="post-headline">백엔드와 플러터의 융합</a></h4>
                                     <p style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:300">
                                         경영학을 전공하면서 축적한 지식과 경험을 토대로 인사 및 회계 분야에서 경력을 쌓았습니다.
                                         그러나 기술 세계의 끊임없는 변화와 혁신은 저에게 매력적으로 다가왔습니다.</p>
@@ -360,7 +360,7 @@
                                 <div class="single-blog-content">
                                     <div class="line"></div>
                                     <a  class="post-tag">Cover Letter 3</a>
-                                    <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500; font-size: 23px;" href="coverletter3.html" class="post-headline">Flutter 웹사이트 구축 프로젝트</a></h4>
+                                    <h4><a style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:500; font-size: 23px;" th:href="@{/coverletter3}" class="post-headline">Flutter 웹사이트 구축 프로젝트</a></h4>
                                     <p style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:300">
                                         FLUTTER로 웹을 만드는 프로젝트를 맡아 진행한 적이 있습니다.
                                         클라이언트의 새로운 사업을 영위하는 데 필요한 웹사이트를 구축하였습니다.</p>
@@ -757,7 +757,7 @@
                                 <!-- Nav Start -->
                                 <div class="classynav">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a th:href="@{/}">Home</a></li>
                                         <li><a href="#">MUSIC</a></li>
                                         <li><a href="#">TRAVEL</a></li>
                                         <li><a href="#">DEVELOPMENT</a></li>
