@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<html xmlns:th="http://www.thymleaf.org"></html>
+
+<head>
+    <th:block th:include="@{/include/css.html}"></th:block>
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preload-content">
+        <div id="original-load"></div>
+    </div>
+</div>
+
+<th:block th:include="@{/include/header.html}"></th:block>
+
+
+
+<!-- ##### Single Blog Area Start ##### -->
+<div class="single-blog-wrapper section-padding-0-100">
+
+<!--    &lt;!&ndash; Single Blog Area  &ndash;&gt;-->
+<!--    <div class="single-blog-area blog-style-2 mb-50">-->
+<!--        <div class="single-blog-thumbnail">-->
+<!--            <img src="img/yulsimg/gletter2.png" alt="" style="height:600px">-->
+<!--            <div class="post-tag-content">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="container">
+        <div class="row">
+            <!-- ##### Post Content Area ##### -->
+            <div class="col-12 col-lg-9">
+                <h1 style="font-family: 'Abril Fatface', cursive; font-size: 56px">COVER LETTER 2</h1><br>
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50">
+                    <!-- Blog Content -->
+                    <div class="single-blog-content">
+                        <div class="line"></div>
+                        <a href="#" class="post-tag">Cover Letter 2</a>
+                        <h4><a th:href="@{/coverletter2}" class="post-headline">백엔드와 플러터의 융합</a></h4>
+                        <div class="post-meta mb-50">
+                            <p>By <a href="#">Choi Yuri</a></p>
+                        </div>
+
+                        <p>경영학을 전공하면서 축적한 지식과 경험을 토대로 인사 및 회계 분야에서 경력을 쌓았습니다.
+                            그러나 기술 세계의 끊임없는 변화와 혁신은 저에게 매력적으로 다가왔습니다.
+                            Java를 활용한 백엔드 개발을 통해 데이터베이스 설계와 API 개발에 대한 이해를 깊이 있게 배우고,
+                            Flutter를 통한 모바일 앱 개발은 사용자 경험과 인터페이스 디자인에 대한 관심을 높였습니다.
+                            이러한 다양한 분야의 습득과 발전을 통해 더 다양한 프로젝트에 기여하고 싶었고,
+                            백엔드를 공부하면서 기존에 공부했었던 Flutter를 이용해서 두 가지 분야의 융합을 통해 더 큰 영향력을 발휘하고 싶은 열망이 생겼습니다.</p>
+
+                    </div>
+                </div>
+
+                <!-- About Author -->
+                <div class="blog-post-author mt-100 d-flex">
+                    <div class="author-thumbnail">
+                        <img src="img/yulsimg/circle_yuri.jpg" alt="">
+                    </div>
+                    <div class="author-info">
+                        <div class="line"></div>
+                        <span class="author-role">I AM</span>
+                        <h4><a href="#" class="author-name">Choi Yuri</a></h4>
+                        <p style="font-family: 'IBM Plex Sans KR', sans-serif; font-weight:300; font-size: 14px;">경영학과를 졸업하고 개발회사에서 인사, 총무 업무를 경험한 경력을 바탕으로 프로젝트 관리능력,
+                            적극성과 학습능력, 비즈니스 이해력을 보유하고 있습니다. 고객의 니즈에 맞는 웹/앱을 개발하고,
+                            제 손으로 만든 서비스로 더 멋진 세상을 만들어나가고 싶은 개발자입니다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ##### Sidebar Area ##### -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="post-sidebar-area">
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title">MY STORY</h5>
+                        <a href="#"><img src="img/yulsimg/story.gif" alt=""></a>
+                    </div>
+
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title">Tags</h5>
+                        <div class="widget-content">
+                            <ul class="tags">
+                                <li><a href="#">FULLSTACK</a></li>
+                                <li><a href="#">WEB</a></li>
+                                <li><a href="#">FLUTTER</a></li>
+                                <li><a href="#">NOTION</a></li>
+                                <li><a href="#">SPRING</a></li>
+                                <li><a href="#">BACKEND</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Single Blog Area End ##### -->
+
+
+<th:block th:include="@{/include/footer.html}"></th:block>
+
+
+<th:block th:include="@{/include/js.html}"></th:block>
+
+</body>
+
+</html>

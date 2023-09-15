@@ -1,0 +1,138 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breaking News Area -->
+                <div class="col-12 col-sm-8">
+                    <div class="breaking-news-area">
+                        <div id="breakingNewsTicker" class="ticker">
+                            <ul>
+                                <li><a href="#">Hello Everyone</a></li>
+                                <li><a href="#">Welocme to YULSDAYS</a></li>
+                                <li><a href="#">This is Yuri's Portfolio</a></li>
+                                <li><a href="#">Enjoy my Works</a></li>
+                                <li><a href="#">Have a nice day</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Social Area -->
+                <div class="col-12 col-sm-4">
+                    <div class="top-social-area">
+                        <a href="http://blog.naver.com/yulscoding" data-toggle="tooltip" data-placement="bottom"
+                           title="Naver">
+                            <img src="/img/yulsimg/naverblog.png" style="width: 13px; height: 13px;" aria-hidden="true"></a></a>
+                        <a href="http://github.com/yuri1123" data-toggle="tooltip" data-placement="bottom"
+                           title="Github">
+                            <img src="/img/yulsimg/githubicon.png" style="width: 13px; height: 13px;"
+                                 aria-hidden="true"></a>
+                        <a href="https://pinto-expansion-491.notion.site/YULS-Develop-Repository-ea81b023e6cd415fb07338fb72d1bfb6?pvs=4"
+                           data-toggle="tooltip" data-placement="bottom" title="Notion">
+                            <img src="/img/yulsimg/notionicon.png" style="width: 14px; height: 14px;"
+                                 aria-hidden="true">
+                        </a>
+                        <a href="http://yulscoding.tistory.com" data-toggle="tooltip" data-placement="bottom"
+                           title="Tistory">
+                            <img src="/img/yulsimg/tistoryicon.png" style="width: 12px; height: 12px;"
+                                 aria-hidden="true"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Area -->
+    <div class="logo-area text-center">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <a th:href="@{/}" class="original-logo"><img src="img/yulsimg/yulsdaylogo2.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Area -->
+    <div class="original-nav-area" id="stickyNav">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between">
+
+                    <!-- Subscribe btn -->
+                    <div class="subscribe-btn">
+                        <a th:href="@{/contact}" class="btn subscribe-btn">Contact
+                            me</a>
+                    </div>
+
+<!--                    &lt;!&ndash; Subscribe Modal &ndash;&gt;-->
+<!--                    <div class="subscribe-newsletter-area">-->
+<!--                        <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal"-->
+<!--                              data-backdrop="static">-->
+<!--                            <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--                                <div class="modal-content">-->
+<!--                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span-->
+<!--                                            aria-hidden="true">&times;</span></button>-->
+<!--                                    <div class="modal-body">-->
+<!--                                        <h5 class="title">email to yuri with any message</h5>-->
+<!--                                        <form action="#" class="newsletterForm" method="post">-->
+<!--                                            <input type="email" name="email" id="subscribesForm2"-->
+<!--                                                   placeholder="Your e-mail here">-->
+<!--                                            <input type="text" name="text" id="subscribesForm"-->
+<!--                                                   placeholder="message here">-->
+<!--                                            <button type="submit" class="btn original-btn">send email</button>-->
+<!--                                        </form>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu" id="originalNav">
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a th:href="@{/}">Home</a></li>
+                                <li><a th:href="@{aboutme}">About ME</a>
+                                </li>
+                                <li><a th:href="@{/skills}">Skills</a></li>
+                                <li><a th:href="@{/works}">Works</a></li>
+                                <li><a th:href="@{/contact}">Contact</a></li>
+
+                                </li>
+                                </li>
+                            </ul>
+
+                            <!--              &lt;!&ndash; Search Form  &ndash;&gt;-->
+                            <!--              <div id="search-wrapper">-->
+                            <!--                <form action="#">-->
+                            <!--                  <input type="text" id="search" placeholder="Search something...">-->
+                            <!--                  <div id="close-icon"></div>-->
+                            <!--                  <input class="d-none" type="submit" value="">-->
+                            <!--                </form>-->
+                            <!--              </div>-->
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+

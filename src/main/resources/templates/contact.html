@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ko">
+<html xmlns:th="http://www.thymleaf.org"></html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<head>
+    <th:block th:include="@{/include/css.html}"></th:block>
+
+    <style>
+
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+        button {
+            overflow: visible;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, input, select, textarea {
+            color: #5A5A5A;
+            font: inherit;
+            margin: 0;
+        }
+
+        input {
+            line-height: normal;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+
+        form {
+            padding: 10.5px;
+            margin: 50px 0;
+        }
+
+        .email {
+            float: right;
+            width: 45%;
+        }
+
+        input[type='text'], [type='email'], select, textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px #474544;
+            color: #474544;
+            font-size: 1.000em;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0em 0 1.875em 0;
+            padding: 0 0 0.875em 0;
+            /*text-transform: uppercase;*/
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        input[type='text']:focus, [type='email']:focus, textarea:focus {
+            outline: none;
+            padding: 0 0 0.875em 0;
+        }
+
+        .message {
+            float: none;
+        }
+
+        .name {
+            float: left;
+            width: 45%;
+        }
+
+        select {
+            background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+            outline: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        .subject {
+            width: 100%;
+        }
+
+        .telephone {
+            width: 100%;
+        }
+
+        textarea {
+            line-height: 150%;
+            height: 150px;
+            resize: none;
+            width: 100%;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #474544;
+        }
+
+        :-moz-placeholder {
+            color: #474544;
+            opacity: 1;
+        }
+
+        ::-moz-placeholder {
+            color: #474544;
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+            color: #474544;
+        }
+
+        #form_button {
+            background: none;
+            border: solid 2px #474544;
+            color: #474544;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-size: 0.875em;
+            font-weight: bold;
+            outline: none;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        #form_button:hover {
+            background: #474544;
+            color: #F2F3EB;
+        }
+
+        @media screen and (max-width: 768px) {
+            #container {
+                margin: 20px auto;
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .underline {
+                width: 68px;
+            }
+
+            #form_button {
+                padding: 15px 25px;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            h1 {
+                font-size: 18px;
+            }
+
+
+            input[type='text'], [type='email'], select, textarea {
+                font-size: 0.875em;
+            }
+        }
+
+
+        .section-title h1 {
+            display: inline-block;
+            font-size: 35px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 5px;
+            position: relative;
+        }
+
+        .section-title h1:before {
+            content: '';
+            left: 0;
+            position: absolute;
+            height: 2px;
+            right: 32%;
+            background-color: #50c5fc;
+            bottom: 0px;
+        }
+
+        .skills .section-title h1:before {
+            left: 30%;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preload-content">
+        <div id="original-load"></div>
+    </div>
+</div>
+
+<th:block th:include="@{/include/header.html}"></th:block>
+
+
+<!-- ##### Blog Wrapper Start ##### -->
+<div class="blog-wrapper section-padding-100-0 clearfix">
+    <div class="container">
+        <div class="row align-items-end">
+            <!-- Single Blog Area -->
+            <div class="col-12 ">
+                <div class="single-blog-area clearfix">
+                    <h1 style="font-family: 'Abril Fatface', cursive; font-size: 56px">CONTACT</h1><br>
+
+                    <div>
+
+                        <form id="contact_form" class="gform" method="POST" data-email="yurifrom1123@gmail.com"
+                              action="https://script.google.com/macros/s/AKfycbw3WhoSc069TRF2eiP8IZNwr0JmUkD3--6YkXkuKzmtTGxreL291r_pChkmQnO-1Bwk/exec">
+
+                            <div class="name">
+                                <label for="name"></label>
+                                <input type="text" placeholder="MY NAME IS" name="name" id="name_input" required>
+                            </div>
+                            <div class="email">
+                                <label for="email"></label>
+                                <input type="email" placeholder="MY EMAIL IS" name="email" id="email_input" required>
+                            </div>
+                            <div class="telephone">
+                                <label for="name"></label>
+                                <input type="text" placeholder="MY NUMBER IS" name="telephone" id="telephone_input"
+                                       required>
+                            </div>
+                            <div class="subject">
+                                <label for="subject"></label>
+                                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                                    <option disabled hidden selected>SUBJECT IS</option>
+                                    <option>프로젝트를 시작하고 싶습니다.</option>
+                                    <option>질문하고 싶은 것이 있습니다.</option>
+                                    <option>제안을 하고 싶습니다.</option>
+                                </select>
+                            </div>
+                            <div class="message">
+                                <label for="message"></label>
+                                <textarea name="message" placeholder="I'D LIKE TO CHAT ABOUT" id="message_input"
+                                          cols="30" rows="5" required></textarea>
+                            </div>
+
+
+                            <script type="text/javascript">
+                                (function () {
+                                    // get all data in form and return object
+                                    function getFormData(form) {
+                                        var elements = form.elements;
+                                        var honeypot;
+
+                                        var fields = Object.keys(elements).filter(function (k) {
+                                            if (elements[k].name === "honeypot") {
+                                                honeypot = elements[k].value;
+                                                return false;
+                                            }
+                                            return true;
+                                        }).map(function (k) {
+                                            if (elements[k].name !== undefined) {
+                                                return elements[k].name;
+                                                // special case for Edge's html collection
+                                            } else if (elements[k].length > 0) {
+                                                return elements[k].item(0).name;
+                                            }
+                                        }).filter(function (item, pos, self) {
+                                            return self.indexOf(item) == pos && item;
+                                        });
+
+                                        var formData = {};
+                                        fields.forEach(function (name) {
+                                            var element = elements[name];
+
+                                            // singular form elements just have one value
+                                            formData[name] = element.value;
+
+                                            // when our element has multiple items, get their values
+                                            if (element.length) {
+                                                var data = [];
+                                                for (var i = 0; i < element.length; i++) {
+                                                    var item = element.item(i);
+                                                    if (item.checked || item.selected) {
+                                                        data.push(item.value);
+                                                    }
+                                                }
+                                                formData[name] = data.join(', ');
+                                            }
+                                        });
+
+                                        // add form-specific values into the data
+                                        formData.formDataNameOrder = JSON.stringify(fields);
+                                        formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+                                        formData.formGoogleSendEmail
+                                            = form.dataset.email || ""; // no email by default
+
+                                        return {data: formData, honeypot: honeypot};
+                                    }
+
+                                    function handleFormSubmit(event) {  // handles form submit without any jquery
+                                        event.preventDefault();           // we are submitting via xhr below
+                                        var form = event.target;
+                                        var formData = getFormData(form);
+                                        var data = formData.data;
+
+                                        // If a honeypot field is filled, assume it was done so by a spam bot.
+                                        if (formData.honeypot) {
+                                            return false;
+                                        }
+
+                                        disableAllButtons(form);
+                                        var url = form.action;
+                                        var xhr = new XMLHttpRequest();
+                                        xhr.open('POST', url);
+                                        // xhr.withCredentials = true;
+                                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                                        xhr.onreadystatechange = function () {
+                                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                                form.reset();
+                                                var formElements = form.querySelector(".form-elements")
+                                                if (formElements) {
+                                                    formElements.style.display = "none"; // hide form
+                                                }
+                                                var thankYouMessage = form.querySelector(".thankyou_message");
+                                                if (thankYouMessage) {
+                                                    thankYouMessage.style.display = "block";
+                                                    alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
+                                                }
+                                            }
+                                        };
+                                        // url encode form data for sending as post data
+                                        var encoded = Object.keys(data).map(function (k) {
+                                            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                                        }).join('&');
+                                        xhr.send(encoded);
+                                    }
+
+                                    function loaded() {
+                                        // bind to the submit event of our form
+                                        var forms = document.querySelectorAll("form.gform");
+                                        for (var i = 0; i < forms.length; i++) {
+                                            forms[i].addEventListener("submit", handleFormSubmit, false);
+                                        }
+                                    };
+                                    document.addEventListener("DOMContentLoaded", loaded, false);
+
+                                    function disableAllButtons(form) {
+                                        var buttons = form.querySelectorAll("button");
+                                        for (var i = 0; i < buttons.length; i++) {
+                                            buttons[i].disabled = true;
+                                        }
+                                    }
+                                })();
+                            </script>
+                            <div style="display:none" class="thankyou_message">
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Send Message" id="form_button"/>
+                            </div>
+                        </form><!-- // End form -->
+                    </div><!-- // End #container -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Blog Wrapper End ##### -->
+
+
+<th:block th:include="@{/include/footer.html}"></th:block>
+
+
+<th:block th:include="@{/include/js.html}"></th:block>
+
+</body>
+
+</html>
